@@ -21,7 +21,7 @@ fakechroot_rinse_env_cmd_subst="/bin/mount=/bin/true
 FAKECHROOT_CMD_SUBST="${FAKECHROOT_CMD_SUBST:+$FAKECHROOT_CMD_SUBST:}`echo "$fakechroot_rinse_env_cmd_subst" | tr '\012' ':'`"
 
 # Set the default list of directories excluded from being chrooted
-FAKECHROOT_EXCLUDE_PATH="${FAKECHROOT_EXCLUDE_PATH:-/dev:/proc:/sys}"
+FAKECHROOT_EXCLUDE_PATH="${FAKECHROOT_EXCLUDE_PATH:-/dev:/proc}"
 export FAKECHROOT_EXCLUDE_PATH
 
 # Change path for unix sockets because we don't want to exceed 108 bytes

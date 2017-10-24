@@ -22,7 +22,7 @@ FAKECHROOT_CMD_SUBST="${FAKECHROOT_CMD_SUBST:+$FAKECHROOT_CMD_SUBST:}`echo \"$fa
 export FAKECHROOT_CMD_SUBST
 
 # Set the default list of directories excluded from being chrooted
-FAKECHROOT_EXCLUDE_PATH="${FAKECHROOT_EXCLUDE_PATH:-/dev:/proc:/sys}"
+FAKECHROOT_EXCLUDE_PATH="${FAKECHROOT_EXCLUDE_PATH:-/dev:/proc}"
 export FAKECHROOT_EXCLUDE_PATH
 
 # Change path for unix sockets because we don't want to exceed 108 bytes
